@@ -153,7 +153,6 @@ def clean_docker_space(base_url, user_id, password):
 
 def run_script_on_all_slaves(base_url, user_uid, password, script):
     sshinfo = get_slave_hostnames(base_url)
-    print sshinfo
     env.hosts = [user_id + '@' + x for x in sshinfo]
     env.password=password
     f = open(script, 'r')
