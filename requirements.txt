@@ -1,0 +1,7 @@
+# Usage: pip install --no-deps -r requirements.txt
+
+# Fabric for ssh
+fabric==1.10.1
+paramiko
+pycrypto
+ecdsa
