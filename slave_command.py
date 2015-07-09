@@ -34,8 +34,8 @@ def parse_options():
         cleandocker - remove all old docker containers
     '''
     parser = optparse.OptionParser(usage=usage)
-    parser.add_option('-m', '--marathon-base-url', dest='base_url', default='http://tr3-mesos-master.int.pason.com:5050',
-                        help='marathon api url')
+    parser.add_option('-m', '--mesos-base-url', dest='base_url', default='http://tr3-mesos-master.int.pason.com:5050',
+                        help='mesos api url')
     parser.add_option('-c', '--command', dest='command', help='command for mesos api')
     parser.add_option('-s', '--script', dest='script', help='shell script to run on all slaves for the runscriptallslaves')
     parser.add_option('-u', '--user', dest='user_id', help='user to login to all the slaves')
